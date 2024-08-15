@@ -1,0 +1,12 @@
+﻿@page "/"
+@attribute [TabItemOption(Text = "打印模板", Closable = false, Icon = "fa fa-print")]
+
+<PageTitle>打印模板设置</PageTitle>
+
+<Table TItem="Entities.PrintEntity"
+       IsPagination="true" PageItemsSource="@PageItemsSource"
+       IsStriped="true" IsBordered="true" IsMultipleSelect="true" AutoGenerateColumns="true"
+       ShowToolbar="true" ShowExtendButtons="true" ShowSkeleton="true">
+</Table>
+
+
